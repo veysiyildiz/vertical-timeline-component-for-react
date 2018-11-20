@@ -1,8 +1,11 @@
 
 ## Full Documentation
 
-[Vertical Timeline Component For React documentation](https://veysiyildiz.github.io/vertical-timeline-component-for-react/)
+[Vertical Timeline Component For React Documentation & Demo](https://veysiyildiz.github.io/vertical-timeline-component-for-react/)
 
+[Vertical Timeline Component For React npm link](https://www.npmjs.com/package/vertical-timeline-component-for-react)
+
+[![Vertical-Timeline-Component-React.gif](https://i.postimg.cc/3wZYZ0Kq/Vertical-Timeline-Component-React.gif)](https://postimg.cc/1g4kmtV0)
 
 ## Install
 
