@@ -1,0 +1,63 @@
+{
+  "name": "vertical-timeline-component-for-react",
+  "version": "1.0.0",
+  "description": "A vertical timeline component for React",
+  "author": "Veysi YILDIZ",
+  "user": "veysiyildiz",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack-dev-server --mode development",
+    "transpile": "babel src -d dist --copy-files",
+    "prepublishOnly": "npm run transpile",
+    "build": "webpack --mode production",
+    "deploy": "gh-pages -d examples/dist",
+    "publish-demo": "npm run build && npm run deploy"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/veysiyildiz/vertical-timeline-component-for-react.git"
+  },
+  "keywords": [
+    "react",
+    "react.js",
+    "vertical timeline",
+    "vertical",
+    "timeline"
+  ],
+  "license": "MIT",
+  "peerDependencies": {
+    "react": ">= 0.11.2 <= 16",
+    "react-dom": ">= 0.11.2 <= 16"
+  },
+  "bugs": {
+    "url": "https://github.com/veysiyildiz/vertical-timeline-component-for-react/issues"
+  },
+  "homepage": "https://github.com/veysiyildiz/vertical-timeline-component-for-react#readme",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.4",
+    "babel-plugin-syntax-dynamic-import": "^6.18.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "catalog": "^3.6.0",
+    "css-loader": "^1.0.1",
+    "gh-pages": "^2.0.1",
+    "html-webpack-plugin": "^3.2.0",
+    "purecss": "^1.0.0",
+    "raw-loader": "^0.5.1",
+    "react": "^16.6.3",
+    "react-dom": "^16.6.3",
+    "react-github-corner": "^2.3.0",
+    "style-loader": "^0.23.1",
+    "webpack": "^4.25.1",
+    "webpack-cli": "^3.1.2",
+    "webpack-dev-server": "^3.1.10"
+  },
+  "dependencies": {
+    "classnames": "^2.2.5",
+    "prop-types": "^15.6.1",
+    "react-visibility-sensor": "^4.1.0"
+  }
+}

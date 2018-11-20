@@ -1,0 +1,23 @@
+.timeline {
+  width: 100%;
+  max-width: 800px;
+  /* background: #fff; */
+  padding: 50px;
+  position: relative;
+  /* box-shadow: 0.5rem 0.5rem 2rem 0 rgba(0, 0, 0, 0.2); */
+  margin: 50px auto;
+}
+.timeline:before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: calc(33% + 15px);
+  bottom: 0px;
+  width: 0px;
+  border: 2px solid;
+}
+.timeline:after {
+  content: "";
+  display: table;
+  clear: both;
+}

@@ -1,0 +1,7 @@
+
+#catalog > div {
+    display: block;
+}
+.github-corner svg {
+    z-index: 1000;
+}

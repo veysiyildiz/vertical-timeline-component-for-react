@@ -1,0 +1,4 @@
+{
+  "presets": ["env", "react", "catalog/babel"],
+  "plugins": ["syntax-dynamic-import"]
+}
