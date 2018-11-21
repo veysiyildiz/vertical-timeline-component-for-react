@@ -3,6 +3,8 @@
 
 [npm package](https://www.npmjs.com/package/vertical-timeline-component-for-react)
 
+[demo](https://veysiyildiz.github.io/vertical-timeline-component-for-react)
+
 [![Vertical-Timeline-Component-React.gif](https://i.postimg.cc/3wZYZ0Kq/Vertical-Timeline-Component-React.gif)](https://postimg.cc/1g4kmtV0)
 
 ## Install
@@ -23,8 +25,7 @@ import { Timeline, TimelineItem }  from 'vertical-timeline-component-for-react';
 <Timeline lineColor={'#ddd'}>
   <TimelineItem
     key={'001'}
-    date="11/2010 – Present"
-    className="custom--class"
+    dateText="11/2010 – Present"
     style={{color: '#e86971'}}
   >
     <h3>Title, Company</h3>
@@ -35,8 +36,7 @@ import { Timeline, TimelineItem }  from 'vertical-timeline-component-for-react';
   </TimelineItem>
   <TimelineItem
     key={'002'}
-    date="04/2009 – 11/2010"
-    className="custom--class"
+    dateText="04/2009 – 11/2010"
     dateInnerStyle={{background: '#61b8ff', color: '#000'}}
     bodyContainerStyle={{background: '#ddd', padding: '20px', borderRadius: '8px', boxShadow: '0.5rem 0.5rem 2rem 0 rgba(0, 0, 0, 0.2)' }}
   >
@@ -47,9 +47,7 @@ import { Timeline, TimelineItem }  from 'vertical-timeline-component-for-react';
   </TimelineItem>
   <TimelineItem
     key={'003'}
-    date="11/2008 – 04/2009"
-    className="custom--class"
-    dateInnerStyle={{background: '#f7d286'}}
+    dateComponent={<div style={{display: 'block', float: 'left', padding: '10px', background: 'rgb(150, 150, 150)', color: "#fff"}}>11/2008 – 04/2009</div>}
   >
     <h3>Title, Company</h3>
     <h4>Subtitle</h4>
@@ -59,8 +57,7 @@ import { Timeline, TimelineItem }  from 'vertical-timeline-component-for-react';
   </TimelineItem>
   <TimelineItem
     key={'004'}
-    date="08/2008 – 11/2008"
-    className="custom--class"
+    dateText="08/2008 – 11/2008"
     dateInnerStyle={{background: '#76bb7f'}}
   >
     <h3>Title, Company</h3>
@@ -97,7 +94,7 @@ Add extra class name to root div element.
 Add extra style to root div element.
 You can change color of timeline points by adding color to style prop.
 
-### `date={ String }`
+### `dateText={ String }`
 
 Date of the element.
 
@@ -108,6 +105,11 @@ Add extra style to `'timeline-item-date'` span element.
 ### `dateInnerStyle={ Object }`
 
 Add extra style to `'timeline-item-dateinner'` time element.
+
+### `dateComponent={ JSX }`
+
+Add custom date Component
+When you use `'dateComponent'` the props `'dateText'`, `'dateStyle'` and `'dateInnerStyle'` will be ignored. 
 
 ### `bodyContainerStyle={ Object }`
 

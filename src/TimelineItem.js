@@ -21,8 +21,9 @@ class TimelineItem extends Component {
     const {
       id,
       children,
-      date,
+      dateText,
       dateStyle,
+      dateComponent,
       dateInnerStyle,
       bodyContainerStyle,
       style,
@@ -45,18 +46,22 @@ class TimelineItem extends Component {
           <Fragment>
           <div className={`title`}>
             <div className={`${visible ? 'bounce-in' : 'is-hidden'}`}>
-              <span
-                style={dateStyle}
-                className={`timeline-item-date`}
-              >
-                <time
-                  style={dateInnerStyle}
-                  className="timeline-item-dateinner" 
-                  title={date}
+              {dateComponent !== '' ?
+                dateComponent
+                :
+                <span
+                  style={dateStyle}
+                  className={`timeline-item-date`}
                 >
-                    {date}
-                </time>
-              </span>
+                  <time
+                    style={dateInnerStyle}
+                    className="timeline-item-dateinner" 
+                    title={dateText}
+                  >
+                      {dateText}
+                  </time>
+                </span>
+              }
             </div>
           </div>
           <div className='body'>
@@ -87,19 +92,21 @@ TimelineItem.propTypes = {
   dateInnerStyle: PropTypes.shape({}),
   bodyContainerStyle: PropTypes.shape({}),
   style: PropTypes.shape({}),
-  date: PropTypes.node,
+  dateText: PropTypes.string,
+  dateComponent: PropTypes.node,
   visibilitySensorProps: PropTypes.shape({}),
 };
 
 TimelineItem.defaultProps = {
   id: '',
   children: '',
+  dateComponent: '',
   className: '',
   dateStyle: null,
   bodyContainerStyle: null,
   dateInnerStyle: null,
   style: null,
-  date: '',
+  dateText: '',
   visibilitySensorProps: { partialVisibility: true, offset: { bottom: 50 } },
 };
 
