@@ -1,8 +1,11 @@
+.timeline--wrapper {
+  width: calc(100% - 24px);
+  padding: 12px;
+}
 .timeline {
   width: 100%;
   max-width: 800px;
-  /* background: #fff; */
-  padding: 50px;
+  padding: 15px 0 0  0;
   position: relative;
   /* box-shadow: 0.5rem 0.5rem 2rem 0 rgba(0, 0, 0, 0.2); */
   margin: 50px auto;
@@ -11,7 +14,7 @@
   content: "";
   position: absolute;
   top: 0px;
-  left: calc(33% + 15px);
+  left: calc(33% + 6px);
   bottom: 0px;
   width: 0px;
   border: 2px solid;
@@ -20,4 +23,10 @@
   content: "";
   display: table;
   clear: both;
+}
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  .timeline:before {
+    left: calc(1% + 6px);
+  }
 }

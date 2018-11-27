@@ -1,9 +1,7 @@
 
 ## Full Documentation
 
-[npm package](https://www.npmjs.com/package/vertical-timeline-component-for-react)
-
-[demo](https://veysiyildiz.github.io/vertical-timeline-component-for-react)
+[npm](https://www.npmjs.com/package/vertical-timeline-component-for-react) / [demo](https://veysiyildiz.github.io/vertical-timeline-component-for-react)
 
 [![Vertical-Timeline-Component-React.gif](https://i.postimg.cc/3wZYZ0Kq/Vertical-Timeline-Component-React.gif)](https://postimg.cc/1g4kmtV0)
 
@@ -17,10 +15,7 @@ $ npm i vertical-timeline-component-for-react
 ## Usage
 
 ```code|lang-jsx
----
 import { Timeline, TimelineItem }  from 'vertical-timeline-component-for-react';
-
-...
 
 <Timeline lineColor={'#ddd'}>
   <TimelineItem

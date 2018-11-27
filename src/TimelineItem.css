@@ -60,7 +60,7 @@
 .entry .title {
   margin-bottom: 0.5em;
   float: left;
-  width: 33%;
+  width: 34%;
   position: relative;
   height: 32px;
 }
@@ -140,5 +140,27 @@
     -ms-transform: scale(1);
     -o-transform: scale(1);
     transform: scale(1);
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  .entry .title {
+    float: left;
+    width: 70%;
+  }
+  .timeline-item-date {
+    margin-left: 30px;
+  }
+  .entry .title:before {
+    top: 15%;
+    left: 3px;
+    right: auto;
+    z-index: 99;
+  }
+  .entry .body {
+    margin: 20px 0 3em;
+    float: right;
+    width: 99%;
   }
 }
