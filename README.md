@@ -1,5 +1,6 @@
 
 ## Full Documentation
+[![codecov](https://codecov.io/gh/veysiyildiz/vertical-timeline-component-for-react/branch/master/graph/badge.svg)](https://codecov.io/gh/veysiyildiz/vertical-timeline-component-for-react)
 
 [npm](https://www.npmjs.com/package/vertical-timeline-component-for-react) / [demo](https://veysiyildiz.github.io/vertical-timeline-component-for-react)
 
