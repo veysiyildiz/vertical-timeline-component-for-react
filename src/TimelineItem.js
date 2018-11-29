@@ -44,36 +44,33 @@ class TimelineItem extends Component {
           onChange={this.onVisibilitySensorChange}
         >
           <Fragment>
-          <div className={`title`}>
-            <div className={`${visible ? 'bounce-in' : 'is-hidden'}`}>
-              {dateComponent !== '' ?
-                dateComponent
-                :
-                <span
-                  style={dateStyle}
-                  className={`timeline-item-date`}
-                >
-                  <time
-                    style={dateInnerStyle}
-                    className="timeline-item-dateinner" 
-                    title={dateText}
-                  >
+            <div className="title">
+              <div className={`${visible ? 'bounce-in' : 'is-hidden'}`}>
+                {dateComponent !== '' ? (
+                  dateComponent
+                ) : (
+                  <span style={dateStyle} className="timeline-item-date">
+                    <time
+                      style={dateInnerStyle}
+                      className="timeline-item-dateinner"
+                      title={dateText}
+                    >
                       {dateText}
-                  </time>
-                </span>
-              }
+                    </time>
+                  </span>
+                )}
+              </div>
             </div>
-          </div>
-          <div className='body'>
-            <div
-              className={`body-container ${
-                visible ? 'bounce-in' : 'is-hidden'
-              }`}
-              style={bodyContainerStyle}
-            >
-              {children}
+            <div className="body">
+              <div
+                className={`body-container ${
+                  visible ? 'bounce-in' : 'is-hidden'
+                }`}
+                style={bodyContainerStyle}
+              >
+                {children}
+              </div>
             </div>
-          </div>
           </Fragment>
         </VisibilitySensor>
       </div>

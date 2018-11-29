@@ -118,11 +118,32 @@ Custom props pass to VisibilitySensor component (default: { partialVisibility: t
 
 ## Showcase
 
-* [(Veysi YILDIZ)](https://www.linkedin.com/in/veysiyildiz/).
+* [(Veysi YILDIZ Cv)](https://veysiyildiz.github.io/).
 
-## TODO 
-add tests
+### Launch demo
+
+```code
+$ npm run start
+```
+
+### Run tests
+
+```code
+$ npm run test
+```
+
+### Watch tests
+
+```code
+$ npm run test:watch
+```
+
+### Run lint
+
+```code
+$ npm run test:lint
+```
 
 ## License
 
-*vertical-timeline-component-for-react* is available under MIT. See LICENSE for more details.
+*vertical-timeline-component-for-react* is available under MIT. See [LICENSE](./LICENSE.txt) for more details.

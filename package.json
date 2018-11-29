@@ -1,12 +1,15 @@
 {
   "name": "vertical-timeline-component-for-react",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "A vertical timeline component for React",
   "author": "Veysi YILDIZ",
   "user": "veysiyildiz",
   "main": "dist/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest",
+    "test:coverage": "jest --coverage",
+    "test:watch": "jest --watch",
+    "test:lint": "./node_modules/.bin/eslint . --ignore-path .gitignore",
     "start": "webpack-dev-server --mode development",
     "transpile": "babel src -d dist --copy-files",
     "prepublishOnly": "npm run transpile",
@@ -30,6 +33,28 @@
     "react": ">= 0.11.2 <= 16",
     "react-dom": ">= 0.11.2 <= 16"
   },
+  "jest": {
+    "coverageDirectory": "./coverage/",
+    "collectCoverage": true,
+    "setupFiles": [
+      "<rootDir>/__tests__/shim.js"
+    ],
+    "moduleFileExtensions": [
+      "js",
+      "jsx",
+      "json"
+    ],
+    "modulePathIgnorePatterns": [
+      "<rootDir>/__tests__/shim.js"
+    ],
+    "moduleNameMapper": {
+      "\\.(css)$": "<rootDir>/node_modules/jest-css-modules"
+    },
+    "moduleDirectories": [
+      "node_modules",
+      "packages"
+    ]
+  },
   "bugs": {
     "url": "https://github.com/veysiyildiz/vertical-timeline-component-for-react/issues"
   },
@@ -37,20 +62,37 @@
   "devDependencies": {
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.3",
+    "babel-eslint": "^10.0.1",
+    "babel-jest": "^23.6.0",
     "babel-loader": "^7.1.4",
     "babel-plugin-syntax-dynamic-import": "^6.18.0",
     "babel-preset-env": "^1.7.0",
     "babel-preset-react": "^6.24.1",
     "catalog": "^3.6.0",
+    "chai": "^4.2.0",
     "css-loader": "^1.0.1",
+    "enzyme": "^3.7.0",
+    "enzyme-adapter-react-16": "^1.7.0",
+    "eslint": "^5.9.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-config-prettier": "^3.3.0",
+    "eslint-import-resolver-webpack": "^0.10.1",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jsx-a11y": "^6.1.2",
+    "eslint-plugin-prettier": "^3.0.0",
+    "eslint-plugin-react": "^7.11.1",
     "gh-pages": "^2.0.1",
     "html-webpack-plugin": "^3.2.0",
+    "jest": "^23.6.0",
+    "jest-css-modules": "^1.1.0",
     "mime": "^2.3.1",
+    "prettier": "^1.15.2",
     "purecss": "^1.0.0",
     "raw-loader": "^0.5.1",
     "react": "^16.6.3",
     "react-dom": "^16.6.3",
     "react-github-corner": "^2.3.0",
+    "regenerator-runtime": "^0.13.1",
     "style-loader": "^0.23.1",
     "webpack": "^4.25.1",
     "webpack-cli": "^3.1.2",
