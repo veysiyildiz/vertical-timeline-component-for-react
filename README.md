@@ -1,6 +1,6 @@
 
 ## Full Documentation
-[![codecov](https://codecov.io/gh/veysiyildiz/vertical-timeline-component-for-react/branch/master/graph/badge.svg)](https://codecov.io/gh/veysiyildiz/vertical-timeline-component-for-react) [![Build Status](https://travis-ci.org/veysiyildiz/vertical-timeline-component-for-react.svg?branch=master)](https://travis-ci.org/veysiyildiz/vertical-timeline-component-for-react) [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/veysiyildiz/vertical-timeline-component-for-react/issues) [![dependencies](https://david-dm.org/veysiyildiz/vertical-timeline-component-for-react.svg)](https://david-dm.org/veysiyildiz/vertical-timeline-component-for-react)
+[![codecov](https://codecov.io/gh/veysiyildiz/vertical-timeline-component-for-react/branch/master/graph/badge.svg)](https://codecov.io/gh/veysiyildiz/vertical-timeline-component-for-react) [![Build Status](https://travis-ci.org/veysiyildiz/vertical-timeline-component-for-react.svg?branch=master)](https://travis-ci.org/veysiyildiz/vertical-timeline-component-for-react) [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/veysiyildiz/vertical-timeline-component-for-react/issues)
 
 [npm](https://www.npmjs.com/package/vertical-timeline-component-for-react) / [demo](https://veysiyildiz.github.io/vertical-timeline-component-for-react)
 
