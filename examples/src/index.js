@@ -68,7 +68,8 @@ const timelineElements = [
   </TimelineItem>,
   <TimelineItem
     key="003"
-    dateComponent={() => (
+    // eslint-disable-next-line prettier/prettier
+    dateComponent={(
       <div
         style={{
           display: 'block',
@@ -80,6 +81,7 @@ const timelineElements = [
       >
         11/2008 – 04/2009
       </div>
+      // eslint-disable-next-line prettier/prettier
     )}
   >
     <h3>Title, Company</h3>

@@ -46,7 +46,7 @@ class TimelineItem extends Component {
           <Fragment>
             <div className="title">
               <div className={`${visible ? 'bounce-in' : 'is-hidden'}`}>
-                {dateComponent !== '' ? (
+                {dateComponent !== null ? (
                   dateComponent
                 ) : (
                   <span style={dateStyle} className="timeline-item-date">
@@ -90,14 +90,18 @@ TimelineItem.propTypes = {
   bodyContainerStyle: PropTypes.shape({}),
   style: PropTypes.shape({}),
   dateText: PropTypes.string,
-  dateComponent: PropTypes.node,
+  dateComponent: PropTypes.oneOfType([
+    PropTypes.string,
+    PropTypes.func,
+    PropTypes.node,
+  ]),
   visibilitySensorProps: PropTypes.shape({}),
 };
 
 TimelineItem.defaultProps = {
   id: '',
   children: '',
-  dateComponent: '',
+  dateComponent: null,
   className: '',
   dateStyle: null,
   bodyContainerStyle: null,
