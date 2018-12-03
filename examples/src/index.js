@@ -1,5 +1,7 @@
 import React, { Fragment } from 'react';
 import ReactDOM from 'react-dom';
+import ReactGA from 'react-ga';
+
 import GithubCorner from 'react-github-corner';
 import { Catalog, CodeSpecimen, ReactSpecimen, pageLoader } from 'catalog';
 import { Timeline, TimelineItem } from '../../src';
@@ -7,6 +9,8 @@ import { Timeline, TimelineItem } from '../../src';
 import './styles.css';
 import 'purecss/build/pure.css';
 
+ReactGA.initialize('UA-130297711-2');
+ReactGA.pageview(window.location.pathname + window.location.search);
 const documentationImports = {};
 const timelineElements = [
   <TimelineItem
