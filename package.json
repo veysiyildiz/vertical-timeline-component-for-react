@@ -58,6 +58,7 @@
   "bugs": {
     "url": "https://github.com/veysiyildiz/vertical-timeline-component-for-react/issues"
   },
+  "publishConfig": { "registry": "https://npm.pkg.github.com/" },
   "homepage": "https://github.com/veysiyildiz/vertical-timeline-component-for-react#readme",
   "devDependencies": {
     "babel-cli": "^6.26.0",
